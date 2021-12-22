@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Kalam', cursive;
+    font-size: 2rem;
+    color: rgb(70, 70, 70);
+}
+
+.row {
+    max-width: 114rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.row:not(:last-child) {
+    margin-bottom: 8rem;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.form {
+    border-radius: 3rem;
+    background-color: rgb(154, 255, 145);
+    overflow: hidden;
+}
+
+.survey {
+    border-bottom: .3rem solid rgb(50, 148, 71);
+}
+
+.title {
+    background-color: rgb(50, 148, 71);
+    border-bottom: 1rem solid rgb(255, 255, 255);
+    padding: 1rem 0;
+    color: #fff;
+}
+
+.title .icon {
+    color: #fff;
+}
+
+.deadline {
+    padding: 1rem 0;
+}
+
+.question {
+    padding-bottom: 1rem 0;
+}
+
+.answers {
+    padding: 1rem 0;
+}
+
+.icon {
+    font-size: 3rem;
+    color: rgb(4, 48, 0);
+}
+
+.btn {
+    background-color: rgb(50, 148, 71);
+    border: none;
+    color: #fff;
+    padding: 1rem 3rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 1rem 0 1rem 0;
+    cursor: pointer;
+}
+
+.answers input[type=text] {
+    width: 30%;
+}
+
+input[type=text] {
+    width: 40%;
+    padding: .5rem 2rem;
+    margin: .8rem 0;
+}
+
+input[type=date] {
+    width: 30%;
+    padding: .5rem 2rem;
+    margin: .8rem 0;
+}
+
+.show-table {
+    margin-top: 2rem;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+.table td, .table th {
+    text-align: left;
+    border: 1px solid #ddd;
+    padding: .8rem;
+}
+  
+.table tr:nth-child(even){background-color: #f2f2f2;}
+  
+.table th {
+    font-size: 1.8rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: rgb(50, 148, 71);
+    color: #fff;
+}
+
+.table td {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.5rem;
+}

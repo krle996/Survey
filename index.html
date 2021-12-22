@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="row">
+        <form class="form">
+            <div class="survey">
+                <div class="title">
+                    <ion-icon class="icon" name="clipboard-outline"></ion-icon>
+                    <label for="">Upitnik</label><br>
+                    <input class="survey-title" placeholder="Unesite naziv upitnika" type="text">
+                </div>
+                <div class="deadline">
+                    <ion-icon class="icon" name="calendar-outline"></ion-icon>
+                    <label for="">Krajnji rok</label><br>
+                    <input class="survey-deadline" type="date">
+                </div>
+                <div class="question">
+                    <ion-icon class="icon" name="help-circle-outline"></ion-icon>
+                    <label for="">Pitanje</label><br>
+                    <input class="survey-question" placeholder="Unesite novo pitanje" type="text"><br>
+                    <div class="answers">
+                        <ion-icon class="icon" name="pencil-outline"></ion-icon>
+                        <label for="">Odgovori</label><br>
+                        <input class="survey-answers" type="text"><br>
+                        <input class="survey-answers" type="text"><br>
+                        <input class="survey-answers" type="text"><br>
+                        <input class="survey-answers" type="text"><br>
+                        <input class="survey-answers" type="text">
+                    </div>
+                </div>
+                <button class="btn new-question">Dodaj pitanje</button>
+                <button class="btn show-questions">Prikazi pitanja</button>
+            </div>
+            <button class="btn submit">Kreiraj upitnik</button>
+        </form>
+
+        <div class="show-table">
+            <table class="table"></table>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
